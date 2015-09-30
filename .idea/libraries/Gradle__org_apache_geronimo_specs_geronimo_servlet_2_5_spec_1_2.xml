@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-servlet_2.5_spec/1.2/84094e65ac3456263c6dce88ade5bcb57181b525/geronimo-servlet_2.5_spec-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-servlet_2.5_spec/1.2/28f8e51131449418968fca78797e2f364dd105eb/geronimo-servlet_2.5_spec-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

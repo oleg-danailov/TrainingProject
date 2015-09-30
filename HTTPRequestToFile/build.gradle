@@ -1,0 +1,51 @@
+plugins {
+    id 'osgi'
+    id 'application'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+version = '0.13'
+
+
+jar {
+    manifest {
+        name = 'Training'
+        instruction 'Bundle-Vendor', 'Estafet'
+        instruction 'Bundle-Description', 'POC for CamelRouting Service'
+        instruction 'Bundle-DocURL', 'http://www.estafet.com'
+       // instruction 'Bundle-Activator', 'osgi.Activator'
+        instruction 'Import-Package',
+                'org.apache.camel.builder, ' +
+                        '* '
+    }
+}
+
+def camel_version = '2.12.0'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'org.osgi:org.osgi.core:6.0.0'
+    //compile group : 'org.osgi', name : 'osgi-core', version: '6.0.0'
+    compile group : 'org.apache.camel', name : 'camel-core', version: camel_version
+    compile group : 'org.apache.camel', name : 'camel-test', version: camel_version
+    compile group : 'org.apache.camel', name : 'camel-jetty', version: camel_version
+    //compile group : 'org.apache.camel', name : 'camel-osgi', version: camel_version
+    //compile group : 'org.apache.camel', name : 'camel-osgi', version: '2.3.0' //'org.apache.camel:camel-osgi:1.2.0'
+
+}
+
+task deployInFuse(type: Copy, dependsOn: jar) {
+    from project.file("build/libs")
+    into project.file('/u01/app/jboss-fuse-6.1.0.redhat-379/deploy/')
+}
+task undeployFromFuse(){
+
+}
+task deleteFromFuse(type: Delete){
+    //delete 'uglyFolder', 'uglyFile'
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.camel:camel-jetty:2.12.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-jetty/2.12.0/de13f532f38f2d4d9596d35b5b7b1cfb8b9a8df6/camel-jetty-2.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.camel/camel-jetty/2.12.0/a5f0121e91813b4b100e4a3af2b2e6ffce767179/camel-jetty-2.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

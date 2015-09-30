@@ -1,0 +1,4 @@
+rootProject.name = 'TrainingProject'
+
+include 'HTTPRequestToFile'
+
